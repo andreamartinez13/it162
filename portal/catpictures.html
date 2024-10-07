@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Cat Pictures</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/forms.css">
+ </head>
+ <body>
+     <header>
+        <img src="images/bannername.png" alt="bannername" id="banner">
+     <!-- <h1>Andrea Enriquez - Web Design</h1> -->
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <!-- <a href="#" target="_blank">Name of project goes here</a> -->
+            <!-- <a href="#" target="_blank">Name of project goes here</a> -->
+            <a href="https://github.com/andreamartinez13/it162" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/andrea-enriquez-martinez" target="_blank">LinkedIn</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </nav>
+     </header>
+     
+   <main class="wrapper">
+    <img src="images/lilo1.JPG" alt="Lilo1" id="lilo">
+    <img src="images/lilo2.JPG" alt="Lilo2" id="lilo">
+    <img src="images/lilo3.JPG" alt="Lilo3" id="lilo">
+    <img src="images/lilo4.JPG" alt="Lilo4" id="lilo">
+    <img src="images/lilo5.jpg" alt="Lilo5" id="lilo">
+    <img src="images/lilo6.jpg" alt="Lilo6" id="lilo">
+
+
+     <footer>
+      <p><small>&copy; 2024-<span id="this-year"></span> by 
+          Andrea Enriquez, All Rights Reserved ~ 
+          <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
+          <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
+     </p>
+    </footer>
+  </main>
+     
+  <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+    <script>
+    //https://tinyurl.com/dynamic-html-css-checkers
+    document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+      
+    document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href); 
+     
+     //set current year in span with id of this-year
+     let d = new Date(); let thisYear = d.getFullYear();
+     document.getElementById("this-year").innerHTML = thisYear;
+    
+    //manages mobile nav 
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    
+    }   
+ </script>
+     
+ </body>
+</html>
