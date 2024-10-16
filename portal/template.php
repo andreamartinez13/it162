@@ -7,7 +7,7 @@
     <p>My goal is to design online platforms that are not only visually appealing but also easy to navigate. I believe that technology should be shared and accessible to everybody no matter their limitations.  I am excited to continue developing my skills and look forward to contributing to web solutions. 
     Check out the projects shown here and feel free to reach out!</p>
     
-    <p><a href="catpictures.html">Wanna see pictures of my cat?</a></p>
+    <p><a href="catpictures.html">Wanna see pictures of my cat??</a></p>
 
 
 <?php include 'includes/footer.php';?>
