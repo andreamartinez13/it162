@@ -1,0 +1,152 @@
+/* Global rules */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html {
+    background-color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+::selection {
+    color: #000;
+    background: #ff0;
+}
+
+h1 {
+    font-weight: normal;
+    margin: auto;
+    background: #fff;
+    line-height: 2.5em;
+}
+
+/* Banner Styling */
+#banner {
+    width: 100%; /* Full width within the header */
+    max-width: 80%; /* Match the width of the main.wrapper */
+    height: auto; /* Maintain the aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+main.wrapper {
+    background-color: white;
+    overflow: auto;
+}
+
+p {
+    margin: 1em; /* Top Right Bottom Left (TRBL) */
+}
+
+h2, h3 {
+    font-weight: bold;
+    margin-left: 1em;
+    line-height: 1em;
+}
+
+a {
+    color: darkcyan;
+    text-decoration: none;
+}
+
+a:hover {
+    color: whitesmoke;
+    background-color: #d3a5a1;
+    text-decoration: none;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Style for Lilo images */
+#lilo {
+    width: 30%; 
+    margin: 15px; 
+    display: inline-block; 
+    border: 3px solid #ccc; 
+    border-radius: 10px; 
+    /* this is the shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease; 
+}
+
+#lilo:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Responsive rules */
+
+/* DESKTOP */
+@media all and (min-width: 1200px) {
+    main.wrapper {
+        width: 80%;
+        margin: auto;
+    }
+
+    #banner {
+        max-width: 80%; /* Match main.wrapper width */
+    }
+
+    h1 {
+        width: 79%;
+        padding-left: 1%;
+    }
+
+    picture.profile img {
+        width: 40%; /* Adjust the size of the image */
+        float: left;
+        margin-right: 2em;
+        margin-left: 2em;
+        margin-top: 20px; /* Add space from the nav */
+        border: 5px solid black; /* Add a black border */
+    }
+}
+
+/* TABLET */
+@media all and (min-width: 501px) and (max-width: 1199px) {
+    main.wrapper {
+        width: 90%;
+        margin: auto;
+    }
+
+    #banner {
+        max-width: 90%; /* Match main.wrapper width */
+    }
+
+    h1 {
+        width: 89%;
+        padding-left: 1%;
+    }
+
+    picture.profile img {
+        width: 50%; /* Adjust the size for tablets */
+        float: left;
+        margin-right: 2em;
+        margin-top: 20px; /* Ensure there's space from the top */
+        border: 5px solid black;
+    }
+}
+
+/* PHONE */
+@media all and (max-width: 500px) {
+    main.wrapper {
+        width: 100%;
+    }
+
+    h1 {
+        width: 99%;
+        padding-left: 1%;
+    }
+
+    picture.profile img {
+        width: 100%; /* Full width for small screens */
+        float: none; /* Remove floating for smaller screens */
+        margin: 0 auto; /* Center the image */
+        margin-top: 20px; /* Ensure there's space from the top */
+        border: 5px solid black;
+    }
+}
