@@ -17,14 +17,14 @@
         <!-- <img src="images/bannername.png" alt="bannername" id="banner"> -->
      <h1><i class="logo fa <?=$logo?>"></i>Andrea Enriquez - Web Design</h1>
         <nav class="topnav" id="myTopnav">
-            <a href="index.php" class="active">Home</a>
+        <?=makeLinks($nav1)?>
+            <!-- <a href="index.php" class="active">Home</a> -->
            
             
             <!-- <a href="#" target="_blank">Name of project goes here</a> -->
-            <!-- <a href="#" target="_blank">Name of project goes here</a> -->
             <a href="https://github.com/andreamartinez13/it162" target="_blank">GitHub</a>
             <a href="https://linkedin.com/in/andrea-enriquez-martinez" target="_blank">LinkedIn</a>
-            <a href="contact.php" target="_blank">Contact</a>
+            <!-- <a href="contact.php" target="_blank">Contact</a> -->
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
      </header>
