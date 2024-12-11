@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head Starts Here -->
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    <!-- Tags for linking the page to CSS files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blueberry.css">
+
+
+    <!-- Scripts Sources -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="js/jquery.blueberry.js"></script>
+
+
+</head>
+<!-- Head Finish here -->
+
+<div>
+<!-- Wrapper starts here -->
+<div id="wrapper">
+    <header>
+
+        <!-- Logo Top -->
+         <a href="index.php" style="display: inline-block;">
+            <img src="images/1logo-kebotana.png" alt="Logo">
+        </a>
+
+        <!-- Nav Bar -->
+        <nav id="primary">
+        <button id="menu-toggle" aria-label="Toggle Navigation">☰</button>
+        <ul>
+            <li><a href="index.php">About Us</a></li>
+            <li><a href="products.php">Products</a></li>
+            <li><a href="locations.php">Locations</a></li>
+            <li><a href="contact.php">Contact Us</a></li>
+        </ul>
+        </nav>
+
+    </header>
+
+    <main id="thx">
+        <!-- Page Identification (Requirement 13) -->
+        <h2 id="page-id">Thank You</h2>
+
+        <h1>Thank you for filling out our form!</h1>
+        <h2>Someone will be in contact with you shortly.</h2>
+        
+
+    </main>
+    <!-- Footer starts here -->
+    <footer>
+        <ul>
+            <li>Copyright &copy; 2024</li>
+            <li>All Rights Reserved</li>
+            <li><a href="">Terms of Use</a></li>
+            <li><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.andreaenriquez.design%2Fit162%2Ffp%2Ftemplate.html">Valid!</a></li>
+        </ul>
+
+    </footer>
+    <!-- Footer finish here -->
+
+    <!-- More JavaScript Fuction -->
+    <script>
+    $(window).load(function() {
+	$('.blueberry').blueberry();
+    });
+    </script>
+    <!-- JavaScript fot menu responsiveness -->
+    <script>
+        // JavaScript for toggling the menu
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.querySelector('#primary ul').classList.toggle('show');
+        });
+    </script>
+</div>
+</body>
+
+</html>

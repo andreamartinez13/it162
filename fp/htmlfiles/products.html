@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head Starts Here -->
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    <!-- Tags for linking the page to CSS files -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blueberry.css">
+
+
+    <!-- Scripts Sources -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="js/jquery.blueberry.js"></script>
+
+
+</head>
+<!-- Head Finish here -->
+
+<div>
+<!-- Wrapper starts here -->
+<div id="wrapper">
+    <header>
+
+        <!-- Logo Top -->
+         <a href="index.php" style="display: inline-block;">
+            <img src="images/1logo-kebotana.png" alt="Logo">
+        </a>
+
+        <!-- Nav Bar -->
+        <nav id="primary">
+        <button id="menu-toggle" aria-label="Toggle Navigation">☰</button>
+        <ul>
+            <li><a href="index.php">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- Page Identification (Requirement 13) -->
+    <h2 id="page-id">Products</h2>
+
+    <!-- PRODUCTS -->
+    <div id="products">
+        <div class="product">
+            <div class="img-container">
+            <img src="images/fruity-gummies.jpg" alt="Fruity Gummies">
+            </div>
+            <p>Fruity Gummies</p>
+            <p>100g $12</p>
+        </div>
+        <div class="product">
+            <div class="img-container">
+                <img src="images/snake-gummies.jpg" alt="Snake Gummies">
+            </div>
+            <p>Snake Gummies</p>
+            <p>100g $12</p>
+        </div>
+        <div class="product">
+            <div class="img-container">
+                <img src="images/chilli-gummies.jpg" alt="Chili Gummies">
+            </div>
+            <p>Chili Gummies</p>
+            <p>100g $12</p>
+        </div>
+        <div class="product">    
+            <div class="img-container">            
+            <img src="images/chilli-mangoes.jpg" alt="Chili Mangoes">
+        </div>
+            <p>Chili Mangoes</p>
+            <p>100g $12</p></div>
+        <div class="product">  
+            <div class="img-container">               
+            <img src="images/chocolates.jpg" alt="Chocolates">
+            </div>
+            <p>Chocolates</p>
+            <p>100g $14</p>
+        </div>
+        <div class="product">
+            <div class="img-container"> 
+            <img src="images/popcorn.jpg" alt="Popcorn">
+            </div>
+            <p>Popcorn</p>
+            <p>100g $12</p>
+        </div>
+        <div class="product">
+            <div class="img-container"> 
+            <img src="images/chips.jpg" alt="Potato Chips">
+            </div>
+            <p>Homemade Potato Chips</p>
+            <p>250g $14</p>
+            <p>500g $32</p>
+            <p>1kg $42</p>
+        </div>
+        <div class="product">
+            <div class="img-container"> 
+            <img src="images/salty-peanuts.jpg" alt="Salty Peanuts">
+            </div>
+            <p>Salty Peanuts</p>
+            <p>100g $15</p>
+        </div>
+        <div class="product">
+            <div class="img-container"> 
+            <img src="images/chilli-peanuts.jpg" alt="Chili Peanuts">
+            </div>
+            <p>Chili Peanuts</p>
+            <p>100g $15</p>
+        </div>
+        <div class="product">
+            <div class="img-container"> 
+            <img src="images/cocktail-peanut.jpg" alt="Cocktail Peanuts">
+            </div>
+            <p>Cocktail Peanuts</p>
+            <p>100g $15</p>
+        </div>
+        <div class="product">
+            <div class="img-container"> 
+            <img src="images/cocktail-cheese-peanut.jpg" alt="Cocktail Cheese Peanuts">
+            </div>
+            <p>Cocktail Cheese Peanuts</p>
+            <p>100g $15</p>
+        </div>
+        <div class="product">
+            <div class="img-container"> 
+            <img src="images/caramelized-peanuts.jpg" alt="Caramelized Peanuts">
+            </div>
+            <p>Caramelized Peanuts</p>
+            <p>100g $15</p>
+        </div>
+    </div>
+       
+    </main>
+
+    <!-- Footer starts here -->
+    <footer>
+        <ul>
+            <li>Copyright &copy; 2024</li>
+            <li>All Rights Reserved</li>
+            <li><a href="">Terms of Use</a></li>
+            <li><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.andreaenriquez.design%2Fit162%2Ffp%2Ftemplate.html">Valid!</a></li>
+        </ul>
+
+    </footer>
+    <!-- Footer finish here -->
+
+    <!-- More JavaScript Fuction -->
+    <script>
+    $(window).load(function() {
+	$('.blueberry').blueberry();
+    });
+    </script>
+    <!-- JavaScript fot menu responsiveness -->
+    <script>
+        // JavaScript for toggling the menu
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.querySelector('#primary ul').classList.toggle('show');
+        });
+    </script>
+</div>
+</body>
+
+</html>

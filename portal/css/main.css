@@ -14,6 +14,8 @@ html {
     background: #ff0;
 }
 
+
+
 h1 {
     font-weight: normal;
     margin: auto;
@@ -30,6 +32,13 @@ h1 {
     margin: 0 auto; /* Center the image */
 }
 
+#glambeautylogo {
+    width: 100px; /
+    height: auto; 
+    display: block; 
+    margin: 10px auto; 
+}
+
 main.wrapper {
     background-color: white;
     overflow: auto;
@@ -37,6 +46,10 @@ main.wrapper {
 
 p {
     margin: 1em; /* Top Right Bottom Left (TRBL) */
+}
+
+b, strong {
+    font-weight: bold;
 }
 
 h2, h3 {
@@ -72,6 +85,13 @@ footer {
     /* this is the shadow */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     transition: transform 0.3s ease; 
+}
+
+#glambeautylogo {
+    width: 100px; /
+    height: auto; 
+    display: block; 
+    margin: 10px auto; 
 }
 
 #lilo:hover {

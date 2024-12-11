@@ -31,11 +31,7 @@
      
    <main class="wrapper">
    
-        <picture class="profile">
-            <source media="(min-width: 1200px)" srcset="images/andreapicture.JPG">
-            <source media="(min-width: 501px)" srcset="images/andreapicture.JPG">
-            <img src="images/andreapicture.JPG" alt="That's me!">
-        </picture>
+
         
         <h2 class="subheader"><?=$PageID?></h2>
 
