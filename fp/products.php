@@ -15,6 +15,13 @@
         </div>
         <div class="product">
             <div class="img-container">
+                <img src="images/snake-gummies.jpg" alt="Snake Gummies">
+            </div>
+            <p>Snake Gummies</p>
+            <p>100g $12</p>
+        </div>
+        <div class="product">
+            <div class="img-container">
                 <img src="images/chilli-gummies.jpg" alt="Chili Gummies">
             </div>
             <p>Chili Gummies</p>
